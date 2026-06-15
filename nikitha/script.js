@@ -75,34 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
     cards.forEach(c => obs.observe(c));
   }
 
-  const form = document.getElementById('contactForm');
-  if (form) {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      let valid = true;
-      const name = form.querySelector('#name');
-      const email = form.querySelector('#email');
-      const message = form.querySelector('#message');
-
-      form.querySelectorAll('.error').forEach(el => el.textContent = '');
-
-      if (!name.value.trim() || name.value.trim().length < 2) {
-        document.getElementById('error-name').textContent = 'Please enter your name (2+ chars)'; valid = false;
-      }
-      const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (!emailRe.test(email.value.trim())) { document.getElementById('error-email').textContent = 'Enter a valid email'; valid = false; }
-      if (!message.value.trim() || message.value.trim().length < 10) { document.getElementById('error-message').textContent = 'Message too short'; valid = false; }
-
-      if (!valid) return;
-
-      const submit = form.querySelector('button[type="submit"]');
-      submit.disabled = true; const prev = submit.textContent; submit.textContent = 'Sending...';
-      setTimeout(() => {
-        alert('Thanks! Your message was sent (simulated). I will respond soon.');
-        form.reset(); submit.disabled = false; submit.textContent = prev;
-      }, 900);
-    });
-  }
+  
 
   const sections = document.querySelectorAll('main section[id]');
   const navLinks = document.querySelectorAll('.menu a');
