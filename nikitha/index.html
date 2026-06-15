@@ -25,6 +25,193 @@
       </ul>
     </nav>
   </header>
+<main>
+    
+    <section id="home" class="hero container">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <h1 class="name">Nikitha Anekalla</h1>
+          <p class="subtitle">Computer Science Student | Aspiring Full Stack Developer</p>
+          <p class="typing">I am <span id="typed">learning to build web apps</span></p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn ghost" href="#contact">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero-aside">
+        
+          <figure class="profile" aria-hidden="false">
+            
+            <img src="photo.jpeg"alt="Nikitha Anekal" class="profile-img">
+      
+            <figcaption class="sr-only">Photo of Nikitha Anekal</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
 
+    
+    <section id="about" class="about container">
+      <h2>About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I am a Computer Science student currently learning Web Development, Java, Git, and Data Structures &amp; Algorithms. I enjoy building projects, exploring new technologies, and continuously improving my problem-solving skills.</p>
+        </div>
+        <aside class="about-stats" aria-hidden>
+          <div class="stat">
+            <strong>Projects</strong>
+            <span>2+</span>
+          </div>
+          <div class="stat">
+            <strong>Languages</strong>
+            <span>JS, Python, C++</span>
+          </div>
+          <div class="stat">
+            <strong>Focus</strong>
+            <span>Frontend & Accessibility</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+    
+    <section id="skills" class="skills container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <article class="skill-card">
+          <h3>HTML &amp; CSS <span class="skill-badge">Beginner</span></h3>
+          <p>Building semantic layouts and responsive pages.</p>
+        </article>
+        <article class="skill-card">
+          <h3>CSS Styling &amp; Design <span class="skill-badge">Beginner</span></h3>
+          <p>Working with modern CSS, Flexbox, and Grid.</p>
+        </article>
+        <article class="skill-card">
+          <h3>Java <span class="skill-badge">Learning</span></h3>
+          <p>Practicing core Java concepts and console applications.</p>
+        </article>
+        <article class="skill-card">
+          <h3>Git &amp; GitHub <span class="skill-badge">Learning</span></h3>
+          <p>Version control basics, commits, branches, and PRs.</p>
+        </article>
+        <article class="skill-card">
+          <h3>Problem Solving <span class="skill-badge">Ongoing</span></h3>
+          <p>Improving algorithmic thinking and practical coding practice.</p>
+        </article>
+        <article class="skill-card">
+          <h3>Web Dev Enthusiast <span class="skill-badge">Beginner</span></h3>
+          <p>Exploring full stack concepts and small projects.</p>
+        </article>
+      </div>
+    </section>
+
+
+    <section id="education" class="education container">
+      <h2>Education</h2>
+      <div class="education-grid">
+        <div class="edu-item">
+          <h3>BTech Computer Science</h3>
+          <p class="meta">Jawaharlal Nehru Technological University Kakinada(JNTUK)-2028
+          </p>
+          <p>Relevant coursework: Algorithms, Data Structures, Web Development, HCI.</p>
+        </div>
+        <div class="edu-item">
+          <h3>Online Coursework</h3>
+          <p class="meta">Frontend specialization — 2024</p>
+          <p>Completed few projects focusing on responsive, accessible design.</p>
+        </div>
+      </div>
+    </section>
+
+   
+    <section id="projects" class="projects container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <article class="project">
+          <div class="project-media" aria-hidden>
+            <div class="media-block"></div>
+          </div>
+          <div class="project-body">
+            <h3>Personal Portfolio Website <span class="proj-badge">Internship Task</span></h3>
+            <p>This portfolio (current internship task) demonstrating responsive design, accessibility, and clean UI.</p>
+            <div class="project-actions">
+              <a href="#" class="btn small">Preview</a>
+              <a href="#" class="btn small ghost">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-media"><div class="media-block"></div></div>
+          <div class="project-body">
+            <h3>SkillSwap Campus <span class="proj-badge">Upcoming</span></h3>
+            <p>Planned full stack project to connect students for skill exchange and campus collaboration.</p>
+            <div class="project-actions">
+              <a href="#" class="btn small">Details</a>
+              <a href="#" class="btn small ghost">Repo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-media"><div class="media-block"></div></div>
+          <div class="project-body">
+            <h3>Java Practice Programs <span class="proj-badge">Ongoing</span></h3>
+            <p>Small Java console programs and exercises to improve core language skills and problem solving.</p>
+            <div class="project-actions">
+              <a href="#" class="btn small">Examples</a>
+              <a href="#" class="btn small ghost">Code</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+ 
+    <section id="contact" class="contact container">
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <form id="contactForm" class="contact-form" novalidate>
+        
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required minlength="2" />
+          <div class="error" id="error-name" aria-live="polite"></div>
+
+          
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+          <div class="error" id="error-email" aria-live="polite"></div>
+
+          
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required minlength="10"></textarea>
+          <div class="error" id="error-message" aria-live="polite"></div>
+
+          <button class="btn primary" type="submit">Send Message</button>
+        </form>
+
+        <aside class="contact-info">
+          <h3>Contact Info</h3>
+          <p>Email: <a href="anekalnikitha@gmail.com">anekalnikitha@gmail.com
+          </a></p>
+          <p>LinkedIn:<a href="https://www.linkedin.com/in/nikitha-anekalla">nikitha-anekalla</a></p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>© <span id="year"></span> Nikitha Anekal — Computer Science Student</div>
+      <nav class="footer-socials" aria-label="social links">
+        <a href="#">LinkedIn</a>
+        <a href="#">GitHub</a>
+        
+      </nav>
+    </div>
+  </footer>
+
+ 
+  <script src="script.js" defer></script>
+</body>
   
 </html>
